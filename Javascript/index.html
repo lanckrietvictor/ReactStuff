@@ -1,0 +1,60 @@
+<!-- DOCTYPE HTML -->
+<html>
+<head>
+<title>Your First React Project</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div id="content"></div>
+<script src="https://use.fontawesome.com/1fff0f7d24.js"></script>
+<script src="https://fb.me/react-0.14.6.js"></script>
+<script src="https://fb.me/react-dom-0.14.6.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+<script type="text/jsx">
+/*Add your React code here*/
+
+var App = React.createClass ({
+  render: function(){
+    return(
+      <div>
+        <Card
+          imgPath={this.props.data.imgPath}
+          title={this.props.data.title}
+          description={this.props.data.description} 
+        />
+        <Card
+          imgPath={this.props.data.imgPath}
+          title={this.props.data.title}
+          description={this.props.data.description}
+        />
+      </div>
+    )
+  }
+})
+
+var DATA = {
+    imgPath: "https://source.unsplash.com/random/400x200",
+    title: "Title",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis eros id erat efficitur dignissim. Vestibulum venenatis purus sem, nec porttitor nisi feugiat ut."
+}
+
+var Card = React.createClass ({
+  render: function(){
+    return(
+      <div className="card">
+        <div className="picture"><img src={this.props.imgPath} alt="image"/></div>
+        <div className="text">
+          <h1 className="Title">{this.props.title}</h1>
+          <div className="description">{this.props.description}</div>
+        </div>
+      </div>
+    )
+  }
+})
+
+ReactDOM.render(<App data={DATA}/>, document.getElementById("content"));
+
+</script>
+</body>
+</html>

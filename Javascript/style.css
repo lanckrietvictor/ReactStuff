@@ -1,0 +1,21 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.card {
+	margin: 0 auto;
+	width: 400px;
+	box-shadow:0 19px 38px rgba(0,0,0,.1),0 15px 12px rgba(0,0,0,.12);
+}
+
+.title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.text {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: 200px;
+}
