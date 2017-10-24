@@ -1,0 +1,68 @@
+<!-- DOCTYPE HTML -->
+<html>
+<head>
+<title>Your First React Project</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content"></div>
+<script src="https://use.fontawesome.com/1fff0f7d24.js"></script>
+<script src="https://fb.me/react-0.14.6.js"></script>
+<script src="https://fb.me/react-dom-0.14.6.js"></script>
+<script src="http://fb.me/JSXTransformer-0.12.1.js"></script>
+<script type="text/jsx">
+/*Add your React code here*/
+
+var Background = React.createClass({
+  render: function(){
+    return (
+    <div>
+      <Title/>
+      <SocialMedia/>
+      <div id="round">
+      </div>
+      <Name/>
+    </div>
+    )
+  }
+})
+
+var Name = React.createClass({
+  render: function(){
+    return (
+      <div id="name">
+        <marquee direction="right">Victor</marquee>
+      </div>
+    )
+  }
+})
+
+var Title = React.createClass({
+  render: function(){
+    return (
+      <h1>
+        Bienvenue sur ma page
+      </h1>
+    )
+  }
+})
+
+var SocialMedia = React.createClass ({
+  render: function(){
+    return (
+      <div>
+        <div id="facebook" className="socialMedia">
+          <a href="http://www.facebook.com" target="_blank">
+            <i className="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    )
+  }
+})
+
+ReactDOM.render(<Background/>, document.getElementById("content"));
+
+</script>
+</body>
+</html>
