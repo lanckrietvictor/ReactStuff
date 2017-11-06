@@ -2,7 +2,7 @@ import React from "react";
 
 function Description (props){
   return (
-  <div>
+  <div className="description">
     <div className="title">
       <h1>{props.title}</h1>
     </div>
