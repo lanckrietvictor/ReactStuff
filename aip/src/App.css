@@ -1,0 +1,89 @@
+/*GENERAL THINGS*/
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.floatRight {
+  float: right;
+  margin-right: 20px;
+}
+
+/*HEADER*/
+
+.topHeader {
+  height: 100px;
+  width: 100%;
+  background-color: #1F2833;
+  border: solid 1px #C5C6C7;
+}
+
+#logo {
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.signIn {
+  color: #66FCF1;
+}
+
+.fa-smile-o {
+  margin-right: 10px;
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  background-color: #1F2833;
+  border: solid 1px #C5C6C7;
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#menu li {
+  float: left;
+  padding-left: 55px;
+  padding-top: 15px;
+  color: #66FCF1;
+}
+
+.search {
+  height: 100px;
+  width: 100%;
+  background-color: #1F2833;
+  border: solid 1px #C5C6C7;
+}
+
+#searchBar {
+  height: 50px;
+  width: 500px;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*BODY*/
+
+.bodyItem {
+    height: 100px;
+    width: 100%;
+    background-color: #1F2833;
+    border: solid 1px #C5C6C7;
+}
+
+.bodyLogo {
+  float: left;
+}
+
+.itemLogo {
+  height: 100px;
+  width: auto;
+}

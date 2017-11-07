@@ -1,8 +1,7 @@
 import React from "react";
 
-function Description (props){
-  return (
-  <div className="description">
+function Description(props) {
+  return (<div className="description">
     <div className="title">
       <h1>{props.title}</h1>
     </div>
@@ -11,8 +10,7 @@ function Description (props){
         {props.content}
       </p>
     </div>
-    </div>
-  )
+  </div>)
 }
 
 export default Description;
